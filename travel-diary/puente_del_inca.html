@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  <title>Registro</title>
+  <title>Puente del Inca</title>
   <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,39 +26,6 @@
         document.getElementById("sideNavigation").style.width = "0";
         //document.getElementById("main").style.marginLeft = "0";
     }
-
-
-    //Activa unos estilos a un id elemento form, 
-    //cuando un input tiene el foco o no,
-    //y según la condición lo activará o lo dejará
-    //como antes.
-    function stylesForm1(id,value,op=true) {
-          let ele=document.getElementById(id)
-          let id_value=document.getElementById(value).value
-          //let id_value=value
-
-        if(op==true){
-          ele.style.top='0px';
-          ele.style.left='0px';
-
-          ele.style.transition='0.3s';
-        }
-        else if(op==false && (!id_value || id_value=='' || id_value==' ') ){
-          ele.style.top='40px';
-          ele.style.left='15px';
-        }
-
-    }
-    //NOTA1: En los datos de value, en caso que no se quiera recolectar
-    //el dato por id del formulario, comentar el document y 
-    //descomentar el value, para aprovechar los datos del framework
-    //y evitar usar id, en formulario.
-
-
-
-
-
-
   </script>
 
 
@@ -192,117 +159,6 @@
         }
       }
     }
-
-
-
-
-
-
-
-  @media (max-width: 576px){
-
-     .fondoimagen0{
-      
-      background-image: url(imagen/imagen2.jpg);
-      background-attachment: fixed;
-      background-position: -50%;
-          
-    }
-
-  }
-
-
-
-
-
-  @media (min-width: 577px){
-    .fondoimagen1{
-      background-image: url(imagen/imagen2.jpg);
-      background-attachment: fixed;
-
-    }
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-  .my_expand_foc:focus{
-    color:#000000;
-    background: #fefefe;
-    border-radius:2px;
-    transform:scale(1.01);
-    transition: 0.3s;
-
-  }
-
-
-
-
-
-
-
-
-
-
-  .my_expand_foc_textarea:focus{
-    height: 300px;
-  }
-
-
-
-
-
-
-
-
-  .my_form_prep{
-    color:#fefefe;    
-    border: 0px;
-    border-bottom: 2px solid #999999;
-    border-radius:0px;
-  }
-
-
-
-
-
-  .my_bg_blu{
-    /*
-    -webkit-backdrop-filter: grayscale() blur(2px); 
-    backdrop-filter: grayscale() blur(2px);
-    //background-color: rgba(255, 255, 255, 0.3);
-    background-color:rgba(0,0,0,0.3);
-    */
-
-    -webkit-backdrop-filter:blur(4px);
-    backdrop-filter: blur(4px);
-
-    //background-color: rgba(255, 255, 255, 0.3);
-    background-color:rgba(0,0,0,0.2);
-
-
-  }
-
-
-  .my_bg_transp{background: rgba(0,0,0,0.0);  }
-
-
-
-
-
-
-
-
-
-
   </style>
 
 
@@ -312,7 +168,7 @@
 </head>
 
 
-<body class="fondoimagen0 fondoimagen1">
+<body>
 
 
 
@@ -332,6 +188,105 @@
 
 
 
+
+
+
+  <!-- Carrusel -->
+<div id="carouselExampleIndicators" class="carousel slide d-none d-sm-block" data-ride="carousel"
+  style="z-index:1">
+
+  <!--Botones DEslizantes Inferiores -->
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <!--Fin-->
+
+
+  <!--Caja de las Imagenes y otros -->
+  <div class="carousel-inner" role="listbox">
+
+    <!--Caja de imagen 1 -->
+    <div class="carousel-item active " style="height:50vh"> 
+      <img class="d-block img-fluid" src="imagen/imagen1.jpg" alt="Imagen1">
+
+      <!--Texto eh información-->
+      <div class="carousel-caption">
+        <h3>Animate a recorrer el mundo, muchos destinos te esperan</h3>
+        <p>
+          Así que si eres un viajero osado y quieres disfrutar de las maravillas naturales y urbanas solo para ti. Sé diferente y descubre los destinos turísticos y no tan turísticos.
+        </p>
+      </div>
+
+
+    </div>
+    <!-- Fin de caja imagen1-->
+
+
+
+
+    <!--Caja de imagen 2-->
+    <div class="carousel-item" style="height:50vh">
+      <img class="d-block img-fluid" src="imagen/imagen2.jpg" alt="Imagen2">
+
+      <!--Texto eh información-->
+      <div class="carousel-caption">
+        <h3>Animate a recorrer el mundo, muchos destinos te esperan</h3>
+        <p>
+          Así que si eres un viajero osado y quieres disfrutar de las maravillas naturales y urbanas solo para ti. Sé diferente y descubre los destinos turísticos y no tan turísticos.
+        </p>
+      </div>
+
+    </div>
+    <!--Fin de Caja imagen2-->
+
+
+
+    <!--Caja de imagen 3-->
+    <div class="carousel-item " style="height:50vh">
+      <img class="d-block img-fluid" src="imagen/imagen3.jpg" alt="Imagen3" >
+
+      <!--Texto eh información-->
+      <div class="carousel-caption">
+        <h3>Animate a recorrer el mundo, muchos destinos te esperan</h3>
+        <p>
+          Así que si eres un viajero osado y quieres disfrutar de las maravillas naturales y urbanas solo para ti. Sé diferente y descubre los destinos turísticos y no tan turísticos.
+        </p>
+      </div>
+
+    </div>
+    <!--Caja de imagen 3-->
+
+
+
+
+  </div>
+
+
+
+  <!-- Boton Deslizante Anterior -->
+  <!--
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  -->
+  <!--Fin Boton-->
+
+
+
+  <!--Botones Deslizante Siguiente -->
+  <!--
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  -->
+  <!--Fin Boton-->
+
+</div>
+  <!-- Fin de Carrusel -->
 
 
 
@@ -373,7 +328,7 @@
           <br>
 
 
-          <a class="expand_0_foc text-white-50 nav-item nav-link mx-1"
+          <a class="active expand_0_foc text-white-50 nav-item nav-link mx-1"
             href="inicio.html"
             >
             <i 
@@ -402,7 +357,7 @@
           
 
           <a 
-            class="active expand_0_foc nav-item nav-link text-white-50 mx-1" 
+            class="expand_0_foc nav-item nav-link text-white-50 mx-1" 
             href="registro.html"
             >
             <i 
@@ -489,7 +444,7 @@
             style="font-size: 17.5px;"
             >
 
-            <a class="nav-item nav-link mx-1" 
+            <a class="active nav-item nav-link mx-1" 
               href="inicio.html"
               >
               Inicio
@@ -502,8 +457,8 @@
             </a>
          
 
-            <a class="active nav-item nav-link mx-1 mr-3" 
-              href="registro.html">
+            <a class="nav-item nav-link mx-1 mr-3" 
+              href="#">
               Registro
             </a>
 
@@ -601,282 +556,164 @@
 
 
 
+
 <div class="container-fluid">
 
 
-  <div class="row justify-content-center">
-    <div class="col-lg-6">
+  <div class="row">
+    <div class="col-md-8 col-lg-8 border-right"> 
+
+
+      <p class="mt-5">
+        <h4 class="display-4">Puente del Inca</h4>
+        Puente del Inca es una localidad del noroeste de la provincia de Mendoza ubicada en el departamento Las Heras, en el oeste de la Argentina. Debe su nombre al monumento natural Puente del Inca, una formación rocosa que forma un puente natural sobre el río Las Cuevas (desde allí llamado río Mendoza). Esta curiosa geoforma, unida a un abandonado hotel de baños termales, lo han convertido en un punto turístico destacado.
+        <br>        
+        <a class="text-primary">Fuente: Wikipedia</a> 
+      </p>
+
+
+      <figure>
+        <img src="imagen/imagen14.jpg" class="rounded" style="width: 85%;">
+        <figcaption>
+          <small class="text-secondary">
+            Créditos de la Foto a quien corresponda.
+          </small>
+        </figcaption>
+      </figure>
+
       <br>
       <br>
-      <br>
-
-
-      <form class="border rounded p-2 my_bg_blu mb-5">
-        <br>
-        <div class="form-group row justify-content-center">
-          <div class="col text-center">
-              <i 
-                class=" 
-                  text-white-50
-                  fa fa-user-o fa-5x
-                ">
-              </i>
-          </div>
-
-          <!--<label class="col-sm-2 col-md-2 col-lg-1 mr-lg-2  col-form-label"></label>-->
-
-          <!--Condición: *ngIf="msg.inval_count && !msg.ErrorLogin " 
-          <div
-            class="col-sm-10 col-md-6 col-lg-4 text-danger">
-            Error Los datos no coinciden
-          </div>
-          -->
-
-          <!--Condición: *ngIf="msg.ErrorLogin"
-          <ngb-alert type="danger">
-
-            <strong>Atención!</strong> 
-            A Superado el Número de Intentos. Por Favor Intente más Tarde.
-
-          </ngb-alert>
-          -->
-
-
-        </div>
-
-
-
-        <div class="form-group row justify-content-center">
-          <div class="col-sm-10 col-md-8 col-lg-10">
-            <label id="label_email" 
-              class="text-white font-weight-bold"
-              style="position: relative; top:40px; left:15px;"
-              >
-              Email
-            </label>
-            
-            <input type="text" id="email"
-              onfocus="stylesForm1('label_email','email',true)" 
-              onblur="stylesForm1('label_email','email',false)"
-              class="form-control my_expand_foc my_form_prep my_bg_transp"
-              style="position: relative;"
-              >
-          </div>
-        </div>
-        <br>
-
-
-
-        <div class="form-group row justify-content-center">
-          <div class="col-sm-10 col-md-8 col-lg-10">
-            <label id="label_name"
-              class="text-white font-weight-bold"
-              style="position: relative; top:40px; left:15px;"
-              >
-              Nombre
-            </label>
-            
-            <input type="text" id="name"
-              onfocus="stylesForm1('label_name','name',true)" 
-              onblur="stylesForm1('label_name','name',false)"
-              class="form-control my_expand_foc my_form_prep my_bg_transp"
-              style="position: relative;"
-              >
-          </div>
-        </div>
-        <br>
+      <hr>
 
 
 
 
 
 
-        <div class="form-group row justify-content-center">
-          <div class="col-sm-10 col-md-8 col-lg-10">
-            <label id="label_surname"
-              class="text-white font-weight-bold"
-              style="position: relative; top:40px; left:15px;"
-              >
-              Apellido
-            </label>
-            
-            <input type="text" id="surname"
-              onfocus="stylesForm1('label_surname','surname',true)" 
-              onblur="stylesForm1('label_surname','surname',false)"
-              class="form-control my_expand_foc my_form_prep my_bg_transp"
-              style="position: relative;"
-              >
-          </div>
-        </div>
-        <br>
 
+      <p class="mt-5">
+        <ul>
+          <li><h4 class="display-4 text-dark" style="font-size:30px">Historia</h4></li>
+        </ul>
+        <p class="ml-4">
+          En la época colonial fue paso obligado de viajeros y correos a Chile y del Ejército de los Andes en la campaña de 1817.
 
+          En 1903 los rieles alcanzaban a Las Cuevas y pocos años más tarde era inaugurado a 3200 metros de altura, el Túnel de la Cumbre que unía la ciudad de Mendoza con Los Andes, de esta forma se concluyeron los centros termales de Cacheuta y Puente del Inca, con sus respectivos hoteles, completando aquel primer paso que fue la extensión ferroviaria. Ambos hoteles, contiguos a las respectivas estaciones ferroviarias, se distinguieron por su modernidad, belleza y confort.
 
-
-
-        <div class="form-group row justify-content-center">
-          <div class="col-sm-10 col-md-8 col-lg-10">
-
-          <label id="label_password"
-            class="text-white font-weight-bold"
-            style="position: relative; top:40px; left:15px;"
-            >
-            Contraseña
-          </label>
-          
-          <input type="password" id="password"
-            onfocus="stylesForm1('label_password','password',true)" 
-            onblur="stylesForm1('label_password','password',false)"
-            class="form-control my_expand_foc  my_form_prep my_bg_transp"
-            style="position: relative;"
-            >
-          </div>
-        </div>
-        <br>
-
-
-
-
-
-
-        <div class="form-group row justify-content-center">
-          <div class="col-sm-10 col-md-8 col-lg-10">
-
-          <label id="label_repeat_password"
-            class="text-white font-weight-bold"
-            style="position: relative; top:40px; left:15px;"
-            >
-            Repetir Contraseña
-          </label>
-          
-          <input type="password" id="repeat_password"
-            onfocus="stylesForm1('label_repeat_password','repeat_password',true)" 
-            onblur="stylesForm1('label_repeat_password','repeat_password',false)"
-            class="form-control my_expand_foc  my_form_prep my_bg_transp"
-            style="position: relative;"
-            >
-          </div>
-        </div>
-        <br>
-
-
-
-
-
-        <div class="form-group row justify-content-center">
-          <div class="col-sm-10 col-md-8 col-lg-10">
-
-          <label id="label_codE"
-            class="text-white font-weight-bold"
-            style="position: relative; top:40px; left:15px;"
-            >
-            Ingrese el Código
-          </label>
-          
-          <div class="input-group">
-            <input type="text" id="codE"
-              onfocus="stylesForm1('label_codE','codE',true)" 
-              onblur="stylesForm1('label_codE','codE',false)"
-              class="form-control my_expand_foc  my_form_prep my_bg_transp"
-              style="position: relative;"
-              >
-
-              <div class="input-group-append">
-
-                <!--*ngIf="!mostReen" -->
-                <button type="button"
-                  class="btn bg-success text-white expand_0_foc"
-                  ngbTooltip="Enviar el Código de Confirmación a su Email" 
-                  triggers="mouseover:mouseout"
-                  >
-                  Enviar a Email
-                </button>
-
-                <!--Condición : *ngIf="mostReen"
-                <button 
-                  class="btn bg-success text-white expand_0_foc"
-                  (click)="envCodEmail()"
-                  [disabled]="msg.ErrorRegistro"
-                  >
-                Reenviar
-                </button>
-                -->
-
-              </div>
-
-
-            </div>
-          </div>
-
+          En 1925 se construyó el Hotel Puente del Inca, donde asistían las personalidades más importantes de la época. Cada habitación poseía su propio baño termal. El año 1945 será decisivo en la iniciación del programa vacacional. En el verano la dictadura militar sancionó el mencionado decreto 1740. En paralelo, tanto los decretos de Personería Gremial como el 33302/45 que otorgaba salario básico, mínimo y vital, el Sueldo Anual Complementario (aguinaldo). Inspirándose en el programa nazi Kraft durch Freude, el presidente Perón fomentó el turismo interno, masificando el acceso a Puente del Inca y otros centros turísticos, hasta entonces reservados a la elite.
           <br>
-          <div class="text-center">
-            <span class="text-white">
-              Por Favor Ingrese el Código de Confirmación
-            </span>
-          </div>
+          <a class="text-primary">Fuente: Wikipedia</a>        
+        </p>
+      </p>
 
-        </div>
+      <figure class="ml-4">
+        <img src="imagen/imagen12.jpg" class="rounded" style="width: 85%;">
+        <figcaption>
+          <small class="text-secondary">
+            Créditos de la Foto a quien corresponda.
+          </small>
+        </figcaption>
+      </figure>
+      <br>
+      <br>
+      <hr>
+
+
+
+
+
+
+
+      <p class="mt-5">
+        <ul>
+          <li><h4 class="display-4 text-dark" style="font-size:30px">Actualidad</h4></li>
+        </ul>
+        <p class="ml-4">
+          Actualmente Puente del Inca es una localidad potencialmente turística desde el punto de vista del trazado del Tren Trasandino. Numerosas empresas tienen en la mira a este sitio para emplazar un centro turístico. La formación ya se vio influenciada por el paso del turista: se modificó el curso del agua y así también la mineralización. Luego del desmembramiento de un pedazo de roca, las autoridades prohibieron el paso por el puente desde el 2006.
+          <br>
+          <a class="text-primary">Fuente: Wikipedia</a>
+        </p>
+      </p>
+
+      <br>
+      <hr>
+
+
+
+
+    </div>
+
+
+    <div class="col-md-4 col-lg-4">
+      <br>
+      <br>
+
+      <div>
+        <a class="text-dark" style="font-size:28px">
+          RELACIONADO
+        </a>
         <br>
+        <hr>
 
-
-
-
-
-
-        <div class="form-group row justify-content-center">
-
-          <div class="col-sm-10 col-md-8 col-lg-10 text-center">
-
-
-            <!--Condición :*ngIf="!msg.loadLog"-->
-            <button
-              type="button" 
-              class="font-weight-bold btn btn-block btn-primary py-3"
-              >
-              Registrarse
-            </button>
-            
-
-            <!--Condición :  *ngIf="msg.loadLog"
-            <button
-              class="d-none d-sm-block btn btn-primary" type="button" disabled
-              >
-              <span 
-                class="spinner-border spinner-border-sm" 
-                role="status" 
-                aria-hidden="true"
-                >
-              </span>
-              Espere...
-            </button>
-            
-
-            <button
-              class="d-block d-sm-none btn btn-block btn-primary" type="button" disabled
-              >
-              <span 
-                class="spinner-border spinner-border-sm" 
-                role="status" 
-                aria-hidden="true"
-                >
-              </span>
-              Espere...
-            </button>
-            -->
-
-
-
-  
-          </div>
-
-
-
-
-        </div>
+        <ul class="font-italic">
+          <li>
+            <a class="text-secondary" href="">
+              Castillo de Neuschwanstein (Alemania)
+            </a>
+          </li>
+          <br>
+          <li>
+            <a class="text-secondary" href="">
+              Puerto Octay, Chile
+            </a>
+          </li>
+          <br>
+          <li>
+            <a class="text-secondary" href="">
+              Parque Nacional Yasuní, Ecuador
+            </a>
+          </li>
+        </ul>
         <br>
         <br>
+      </div>
 
-      </form>
+
+      <div>
+        <a class="text-dark" style="font-size:28px">
+          ENTRADAS RECIENTES
+        </a>
+        <br>
+        <hr>
+        <ul class="font-italic">
+          <li>
+            <a class="text-secondary" href="">
+              Fiordo de Geirangerfjord (Noruega)
+            </a>
+          </li>
+          <br>
+          <li>
+            <a class="text-secondary" href="">
+              Cataratas Victoria (Zimbabue)
+            </a>
+          </li>
+          <br>
+          <li>
+            <a class="text-secondary" href="">
+              Parque Geológico Zhangye Danxia (China)
+            </a>
+          </li>
+        </ul>
+        <br>
+        <br>
+      </div>
+
+
+
+
+      <p>
+
+      </p>
 
 
 
@@ -920,6 +757,461 @@
 
 
 
+<div class="container-fluid">
+
+
+  <hr>
+
+  <br>
+  <br>
+
+
+  <div class="row mx-1 justify-content-center">
+    
+
+
+    <div class=" py-4 col-md-10">
+
+
+      <div><!--*ngFor="..."-->
+
+
+        <!--Primera Fila-->
+        <div class="row mr-4">
+
+
+          <div class="col-3 col-sm-2 col-md-2 col-lg-2 mt-1">
+            <!--Imagen usuario -->
+            <!--
+            <div class="mx-0 mx-sm-1 py-2 rounded bg-secondary text-center">
+              <a class=" text-white-50">. . .</a>
+            </div>
+            -->
+            <i 
+              class="
+              expand_0 
+              text-secondary
+              fa fa-user-circle fa-4x
+              ">
+            </i>
+
+
+          </div>
+
+          <div class="col">
+
+            <div class="row">
+              
+              <div class="col">
+                <div class="text-dark">
+                  <strong>Usuario2</strong>
+                </div>
+
+                <div>
+                  <small class="text-secondary">2020-02-01 10:23:58</small>
+                  <br>
+
+                  <a class="text-dark">
+                    Unos Excelentes lugares para visitar  
+                  </a>
+
+
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="row">
+
+              <div class="col">
+                <div>
+                
+                  <!-- *ngIf
+                  <button
+                  class="btn btn-primary mr-1"  
+                  style="font-size:12px"
+                  >
+
+                    Editar
+
+                  </button> 
+
+                  <button
+                    class="btn btn-primary mr-1"  
+                    style="font-size:12px"
+                    >
+
+                    No Editar
+                  </button>   
+
+
+
+                  <button
+                    class="btn btn-primary mr-1"  
+                    style="font-size:12px"
+                    >
+                    Eliminar
+                  </button>   
+
+                  
+                  <button
+                   class="btn btn-secondary" 
+                   type="button" disabled>
+                    <span 
+                    class="spinner-border spinner-border-sm" 
+                    role="status" aria-hidden="true">
+                   </span>
+                    Eliminando...
+                  </button>
+                  -->
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+        <hr>
+        <br>
+
+
+
+
+
+
+        <!--Segunda Fila-->
+        <div class="row mr-4">
+
+
+          <div class="col-3 col-sm-2 col-md-2 col-lg-2 mt-1">
+            <!--Imagen usuario -->
+            <i 
+              class="
+              expand_0 
+              text-secondary
+              fa fa-user-circle fa-4x
+              ">
+            </i>
+          </div>
+
+          <div class="col">
+
+            <div class="row">
+              
+              <div class="col">
+                <div class="text-dark">
+                  <strong>Usuario1</strong>
+                </div>
+
+                <div>
+                  <small class="text-secondary">2020-01-15 10:23:58</small>
+                  <br>
+
+                  <a class="text-dark">
+                    Unos Excelentes lugares para visitar  
+                  </a>
+
+
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="row">
+
+              <div class="col">
+                <div>
+                  <button
+                    class="expand_0 border border-top-0 btn bg_void mr-1"  
+                    
+                    >
+                    <i 
+                      class="
+                      text-secondary
+                      fa fa-edit fa-2x
+                      ">
+                    </i>                    
+                  </button> 
+
+                  <!-- *ngIf                          
+                  <button
+                    class="btn btn-primary mr-1"  
+                    style="font-size:12px"
+                    >
+
+                    No Editar
+                  </button>   
+                  -->
+
+
+                  <button
+                    class="expand_0 border border-top-0 btn bg_void mr-1"  
+                    
+                    >
+                    <i 
+                      class="
+                      text-secondary
+                      fa fa-trash fa-2x
+                      ">
+                    </i>
+                  </button>
+
+                  <!--
+                  <button
+                   class="btn btn-secondary" 
+                   type="button" disabled>
+                    <span 
+                    class="spinner-border spinner-border-sm" 
+                    role="status" aria-hidden="true">
+                   </span>
+                    Eliminando...
+                  </button>
+                  -->
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+        <hr>
+        <br>
+
+
+
+
+        <!--Tercera Fila-->
+        <div class="row mr-4">
+
+
+          <div class="col-3 col-sm-2 col-md-2 col-lg-2 mt-1">
+            <!--Imagen usuario -->
+            <i 
+              class="
+              expand_0 
+              text-secondary
+              fa fa-user-circle fa-4x
+              ">
+            </i>
+
+          </div>
+
+          <div class="col">
+
+            <div class="row">
+              
+              <div class="col">
+                <div class="text-dark">
+                  <strong>Usuario2</strong>
+                </div>
+
+                <div>
+                  <small class="text-secondary">2020-01-11 10:23:58</small>
+                  <br>
+
+                  <a class="text-dark">
+                    Unos Excelentes lugares para visitar 
+                  </a>
+
+
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="row">
+
+              <div class="col">
+                <div>
+
+                  <!-- *ngIf                  
+                  <button
+                  class="btn btn-primary mr-1"  
+                  style="font-size:12px"
+                  >
+
+                    Editar
+
+                  </button> 
+                        
+                  <button
+                    class="btn btn-primary mr-1"  
+                    style="font-size:12px"
+                    >
+
+                    No Editar
+                  </button>   
+
+
+
+                  <button
+                    class="btn btn-primary mr-1"  
+                    style="font-size:12px"
+                    >
+                    Eliminar
+                  </button>   
+
+                  
+                  <button
+                   class="btn btn-secondary" 
+                   type="button" disabled>
+                    <span 
+                    class="spinner-border spinner-border-sm" 
+                    role="status" aria-hidden="true">
+                   </span>
+                    Eliminando...
+                  </button>
+                  -->
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+        <hr>
+        <br>
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="row justify-content-center">
+    <div class="col-md-10 m-0">
+
+      <br>
+
+
+    </div>
+  </div>
+
+
+
+
+  <div class="row justify-content-center">
+
+    <!--CAJA CREA COMENTARIO -->
+    <!--<div class="col-11 col-sm-11 col-md-10 col-lg-10 m-0">-->
+      <div class="col-md-10 m-0">
+
+        <form>
+
+          <div class="form-group">
+            <label class="text-dark">Comentario</label>
+
+
+            <textarea 
+              class="form-control my_sha" 
+              id="exampleFormControlTextarea1" 
+              rows="3"
+              >
+            </textarea>
+
+            <br>
+
+
+            <!--ACTIVATE
+            <button    
+               class="btn btn-primary" 
+               type="button" disabled>
+                <span 
+                class="spinner-border spinner-border-sm" 
+                role="status" aria-hidden="true">
+               </span>
+                Enviando...
+            </button>
+            -->
+
+
+
+          </div>
+
+
+          <div class="form-group">
+            <label class="text-dark">Nombre</label>
+            <input type="text" class="form-control my_sha">
+          </div>
+
+
+          <div class="form-group">
+            <label class="text-dark">Email</label>
+            <input type="text" class="form-control my_sha">
+          </div>
+
+
+          <div class="form-group">
+            <button
+              class="btn btn-primary"
+              >
+              Publicar
+            </button>
+          </div>
+
+
+
+        </form>
+      </div>
+
+  </div>
+
+
+
+
+
+
+
+  <br>
+  <br>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -934,6 +1226,54 @@
       <br>
     </div>
 
+    <div class="col-12 text-white-50 text-center">
+
+      <h4 class="display-4" style="font-size:43px">
+        Recibe nuestras actualizaciones
+      </h4>
+      <br>
+      <br>
+    </div>
+
+    <div class="col-12 text-white-50 text-center">
+
+
+      <form class="d-none d-md-block">
+        <div class="row justify-content-center form-group">
+          <div class="col-8">
+            <div class="input-group">
+              <input type="text" placeholder="Email" class="form-control">
+              <input type="text" placeholder="Nombre" class="form-control">
+              <input type="text" placeholder="Apellido" class="form-control">
+              
+              <button class="ml-2 btn btn-primary">Subscribirme</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+
+
+      <form class="d-block d-md-none">
+        <div class="row justify-content-center form-group">
+          <div class="col-8">
+            <input type="text" placeholder="Email" class="form-control">
+            <br>
+            <input type="text" placeholder="Nombre" class="form-control">
+            <br>
+            <input type="text" placeholder="Apellido" class="form-control">
+            <br>
+            <button class="ml-2 btn btn-primary">Subscribirme</button>
+          </div>
+        </div>
+      </form>
+
+
+
+
+
+      <br>
+    </div>
 
 
 
